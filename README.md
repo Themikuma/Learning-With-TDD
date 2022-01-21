@@ -6,4 +6,4 @@ The order of folders and modules will follow the order of the projects in the bo
 beginer and advanced users who just want to jump into a different chapter.
 
 1. [Hello Go](https://github.com/Themikuma/Learning-With-TDD/tree/main/hello-go) - https://quii.gitbook.io/learn-go-with-tests/go-fundamentals/hello-world
-2. [Integers] (https://github.com/Themikuma/Learning-With-TDD/tree/main/integers) - https://quii.gitbook.io/learn-go-with-tests/go-fundamentals/integers
+2. [Integers](https://github.com/Themikuma/Learning-With-TDD/tree/main/integers) - https://quii.gitbook.io/learn-go-with-tests/go-fundamentals/integers
