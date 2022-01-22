@@ -5,6 +5,9 @@ import (
 	"testing"
 )
 
+const benchmarkString = "this should brick concat"
+const benchmarkRepetitions = 100000
+
 func TestRepeat(t *testing.T) {
 
 	formattedAssert := func(t *testing.T, expected string, actual string) {
@@ -36,8 +39,22 @@ func TestRepeat(t *testing.T) {
 
 func BenchmarkRepeat(b *testing.B) {
 	for i := 0; i < b.N; i++ {
-		Repeat("this should brick concat", 80000)
+		Repeat(benchmarkString, benchmarkRepetitions)
 	}
+}
+
+func BenchmarkConcatRepeat(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		concatRepeat(benchmarkString, benchmarkRepetitions)
+	}
+}
+
+func concatRepeat(letter string, times int) string {
+	var repeated string
+	for i := 0; i < times; i++ {
+		repeated += letter
+	}
+	return repeated
 }
 
 func ExampleRepeat() {
