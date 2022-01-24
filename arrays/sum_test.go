@@ -19,7 +19,7 @@ func TestSum(t *testing.T) {
 	})
 }
 
-func arrayAssertHelper(t *testing.T, want []int, got []int) {
+func arrayAssertHelper(t *testing.T, got []int, want []int) {
 	t.Helper()
 	if !reflect.DeepEqual(got, want) {
 		t.Errorf("want %v got %v", want, got)
@@ -74,9 +74,7 @@ func TestSumAllTails(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			if got := SumAllTails(tt.numbersToSum...); !reflect.DeepEqual(got, tt.want) {
-				t.Errorf("SumAllTails() = %v, want %v", got, tt.want)
-			}
+			arrayAssertHelper(t, SumAllTails(tt.numbersToSum...), tt.want)
 		})
 	}
 }
