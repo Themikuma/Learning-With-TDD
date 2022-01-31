@@ -8,3 +8,4 @@ beginer and advanced users who just want to jump into a different chapter.
 1. [Hello Go](https://github.com/Themikuma/Learning-With-TDD/tree/main/hello-go) - https://quii.gitbook.io/learn-go-with-tests/go-fundamentals/hello-world
 2. [Integers](https://github.com/Themikuma/Learning-With-TDD/tree/main/integers) - https://quii.gitbook.io/learn-go-with-tests/go-fundamentals/integers
 3. [Iteration](https://github.com/Themikuma/Learning-With-TDD/tree/main/iteration) - https://quii.gitbook.io/learn-go-with-tests/go-fundamentals/iteration
+4. [Arrays](https://github.com/Themikuma/Learning-With-TDD/tree/main/arrays) - https://quii.gitbook.io/learn-go-with-tests/go-fundamentals/arrays-and-slices
