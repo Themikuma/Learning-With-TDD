@@ -10,3 +10,4 @@ beginer and advanced users who just want to jump into a different chapter.
 3. [Iteration](https://github.com/Themikuma/Learning-With-TDD/tree/main/iteration) - https://quii.gitbook.io/learn-go-with-tests/go-fundamentals/iteration
 4. [Arrays](https://github.com/Themikuma/Learning-With-TDD/tree/main/arrays) - https://quii.gitbook.io/learn-go-with-tests/go-fundamentals/arrays-and-slices
 5. [Structs, Methods and interfaces](https://github.com/Themikuma/Learning-With-TDD/tree/main/structs-methods-interfaces) - https://quii.gitbook.io/learn-go-with-tests/go-fundamentals/structs-methods-and-interfaces
+6. [Pointers and errors](https://github.com/Themikuma/Learning-With-TDD/tree/main/pointers-errors) - https://quii.gitbook.io/learn-go-with-tests/go-fundamentals/pointers-and-errors
