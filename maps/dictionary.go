@@ -5,9 +5,11 @@ type Dictionary map[string]string
 
 const (
 	// ErrNotFound is returned when the word is not defined in the dictionary
-	ErrNotFound = DictionaryErr("definition not found")
+	ErrNotFound = DictionaryErr("word definition not found")
 	//ErrDuplicateKey flags that a word has already been defined by the dictionary
 	ErrDuplicateKey = DictionaryErr("duplicate entry detected")
+	//ErrWordDoesNotExist is returned when an attempt to update a missing entry has been made
+	ErrWordDoesNotExist = DictionaryErr("cannot update missing entry")
 )
 
 //DictionaryErr provides a way to access all errors
@@ -39,4 +41,18 @@ func (d Dictionary) Add(word, definition string) error {
 		return err
 	}
 	return nil
+}
+
+//Update an already existing entry with a new definition
+func (d Dictionary) Update(word, definition string) error {
+	_, err := d.Search(word)
+	switch err {
+	case ErrNotFound:
+		return ErrWordDoesNotExist
+	case nil:
+		d[word] = definition
+	default:
+		return err
+	}
+	return err
 }
